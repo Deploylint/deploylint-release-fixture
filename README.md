@@ -12,4 +12,4 @@ This repository contains no credentials or production data. Its default branch i
 
 ## Current release gate
 
-The fixture intentionally has no deployment CLI dependency yet. DeployLint generator v3 must fail with `Missing locked Cloudflare deployment tool` instead of downloading Wrangler at runtime. Add a lockfile-installed Wrangler version only after that exact package version passes the mandatory trust review.
+Generator v5 was verified to fail with `Missing locked Cloudflare deployment tool` before the deployment CLI was installed. Wrangler 4.131.1 is now pinned in devDependencies and the npm lockfile. Its dependency audit, fixture test, build, and deployment dry run passed. Deployment credentials belong only in the reviewed production environment; temporary acceptance credentials are revoked after the run.
