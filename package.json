@@ -9,5 +9,8 @@
   "scripts": {
     "test": "node --test",
     "build": "node --check src/index.js"
+  },
+  "devDependencies": {
+    "wrangler": "4.131.1"
   }
 }
